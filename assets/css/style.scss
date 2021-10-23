@@ -10,6 +10,10 @@ body {
   font-size: 18px;
 }
 
+.active {
+  border-bottom: 2px solid #fff;
+}
+
 .homepage {
   height: 100vh;
   background: url('../home/background-home-desktop.jpg') no-repeat center center/cover;
@@ -17,7 +21,48 @@ body {
   .nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 40px;
     padding-left: 55px;
+
+    .aesthetic-bar {
+      width: 410px;
+      border: 1px solid #979797;
+      margin-right: -8rem;
+      z-index: 22;
+    }
+
+
+    .navbar {
+      position: relative;
+      display: flex;
+      justify-content: space-evenly;
+      width: 830px;
+      list-style-type: none;
+      z-index: 11;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba($color: rgb(255, 255, 255), $alpha: 0.05);
+        backdrop-filter: blur(10px);
+        z-index: -1;
+      }
+
+      li {
+        padding: 38px 0;
+
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #fff;
+          padding: 38px 0;
+        }
+      }
+    }
   }
 }

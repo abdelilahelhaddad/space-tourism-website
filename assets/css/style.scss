@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+}
+
+.homepage {
+  height: 100vh;
+  background: url('../home/background-home-desktop.jpg') no-repeat center center/cover;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 55px;
+  }
+}

@@ -88,35 +88,41 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   position: absolute;
-  bottom: 128px;
+  bottom: 80px;
   left: 165px;
   right: 165px;
 }
 
 .homepage .heroSection .homeContent {
-  width: 450px;
+  width: 410px;
   color: #fff;
 }
 
 .homepage .heroSection .homeContent .topContent {
   font-size: 28px;
   text-transform: uppercase;
+  word-spacing: 0.8rem;
 }
 
 .homepage .heroSection .homeContent .midContent {
-  font-size: 150px;
+  font-size: 130px;
   font-family: 'Bellefair', serif;
   text-transform: uppercase;
+  margin: 1.3rem 0;
 }
 
 .homepage .heroSection .homeContent .bottomContent {
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 2rem;
 }
 
 .homepage .heroSection .cta {
-  width: 274px;
-  height: 274px;
+  width: 254px;
+  height: 254px;
   background: #fff;
   color: #000;
   border-radius: 50%;

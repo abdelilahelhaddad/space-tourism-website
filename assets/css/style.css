@@ -38,9 +38,9 @@ body {
 }
 
 .homepage .nav .aesthetic-bar {
-  width: 410px;
+  width: 25%;
   border: 1px solid #979797;
-  margin-right: -8rem;
+  margin-right: -16%;
   z-index: 22;
 }
 
@@ -52,7 +52,7 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 830px;
+  width: 58%;
   list-style-type: none;
   z-index: 11;
 }
@@ -71,14 +71,14 @@ body {
 }
 
 .homepage .nav .navbar li {
-  padding: 38px 0;
+  padding: 30px 0;
 }
 
 .homepage .nav .navbar li a {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
-  padding: 38px 0;
+  padding: 30px 0;
 }
 
 .homepage .heroSection {

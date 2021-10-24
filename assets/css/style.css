@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
 *,
 *::after,
 *::before {
@@ -9,6 +11,7 @@
 
 body {
   font-size: 18px;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 
 .active {
@@ -76,5 +79,59 @@ body {
   text-transform: uppercase;
   color: #fff;
   padding: 38px 0;
+}
+
+.homepage .heroSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  bottom: 128px;
+  left: 165px;
+  right: 165px;
+}
+
+.homepage .heroSection .homeContent {
+  width: 450px;
+  color: #fff;
+}
+
+.homepage .heroSection .homeContent .topContent {
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.homepage .heroSection .homeContent .midContent {
+  font-size: 150px;
+  font-family: 'Bellefair', serif;
+  text-transform: uppercase;
+}
+
+.homepage .heroSection .homeContent .bottomContent {
+  font-size: 18px;
+}
+
+.homepage .heroSection .cta {
+  width: 274px;
+  height: 274px;
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+  text-decoration: none;
+  position: relative;
+}
+
+.homepage .heroSection .cta span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 32px;
+  font-family: 'Bellefair', serif;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */

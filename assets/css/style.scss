@@ -15,7 +15,7 @@ body {
 }
 
 .active {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #fff !important;
 }
 
 .homepage {
@@ -65,6 +65,10 @@ body {
           text-transform: uppercase;
           color: #fff;
           padding: 30px 0;
+
+          &:hover {
+            border-bottom: 2px solid rgba($color: #ffffff, $alpha: 0.5);
+          }
         }
       }
     }
@@ -80,7 +84,7 @@ body {
     right: 165px;
 
     .homeContent {
-      width: 410px;
+      width: 25rem;
       color: #fff;
 
       .topContent {
@@ -111,7 +115,7 @@ body {
       text-decoration: none;
       position: relative;
 
-      span {
+      .ctaButton {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -119,6 +123,10 @@ body {
         font-size: 32px;
         font-family: 'Bellefair', serif;
         text-transform: uppercase;
+      }
+
+      &:hover {
+        box-shadow: 0 0 0 70px rgba($color: #ffffff, $alpha: 0.1);
       }
     }
   }

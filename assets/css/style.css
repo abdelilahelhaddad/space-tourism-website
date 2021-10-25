@@ -10,11 +10,12 @@
 }
 
 body {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: 'Barlow Condensed', sans-serif;
 }
 
 .active {
+  color: #FFFFFF !important;
   border-bottom: 2px solid #FFFFFF !important;
 }
 
@@ -35,7 +36,7 @@ body {
 }
 
 .smallTitle {
-  font-size: 28px;
+  font-size: 1.75rem;
   text-transform: uppercase;
   word-spacing: 0.8rem;
   color: #D0D6F9;
@@ -47,7 +48,7 @@ body {
 }
 
 .bigTitle {
-  font-size: 130px;
+  font-size: 8rem;
   font-family: 'Bellefair', serif;
   text-transform: uppercase;
   margin: 1.3rem 0;
@@ -55,7 +56,7 @@ body {
 }
 
 .textContent {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 2rem;
   color: #D0D6F9;
 }
@@ -149,7 +150,7 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 32px;
+  font-size: 2rem;
   font-family: 'Bellefair', serif;
   text-transform: uppercase;
 }
@@ -165,9 +166,83 @@ body {
   background: url("../destination/background-destination-desktop.jpg") no-repeat center center/cover;
 }
 
-.moonPage .moonSection .moonLeft .moonImage {
-  width: 380px;
-  height: 380px;
-  margin-top: 5rem;
+.moonPage .moonSection .leftDestination {
+  position: relative;
+  bottom: 0;
+}
+
+.moonPage .moonSection .leftDestination .destinationImage {
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.moonPage .moonSection .leftDestination .destinationImage img {
+  max-width: calc(100% - 3rem);
+}
+
+.moonPage .moonSection .righttDestination {
+  width: 480px;
+}
+
+.moonPage .moonSection .righttDestination .destinationMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 75%;
+  list-style-type: none;
+}
+
+.moonPage .moonSection .righttDestination .destinationMenu li {
+  padding: 10px 0;
+}
+
+.moonPage .moonSection .righttDestination .destinationMenu li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #D0D6F9;
+  padding: 10px 0;
+  letter-spacing: 0.25rem;
+}
+
+.moonPage .moonSection .righttDestination .destinationMenu li a:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.moonPage .moonSection .righttDestination .textContent {
+  margin-bottom: 2rem;
+}
+
+.moonPage .moonSection .righttDestination .aesthetic-bar {
+  width: 100%;
+  border: 1px solid #979797;
+}
+
+.moonPage .moonSection .righttDestination .distanceTime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 75%;
+  margin-top: 1.5rem;
+}
+
+.moonPage .moonSection .righttDestination .distanceTime .distance .title,
+.moonPage .moonSection .righttDestination .distanceTime .time .title {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #D0D6F9;
+}
+
+.moonPage .moonSection .righttDestination .distanceTime .distance .number,
+.moonPage .moonSection .righttDestination .distanceTime .time .number {
+  font-size: 1.75rem;
+  font-family: 'Bellefair', serif;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */

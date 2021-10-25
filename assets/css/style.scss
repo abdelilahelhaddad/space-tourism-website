@@ -10,11 +10,12 @@
 }
 
 body {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: 'Barlow Condensed', sans-serif;
 }
 
 .active {
+  color: #FFFFFF !important;
   border-bottom: 2px solid #FFFFFF !important;
 }
 
@@ -29,7 +30,7 @@ body {
 }
 
 .smallTitle {
-  font-size: 28px;
+  font-size: 1.75rem;
   text-transform: uppercase;
   word-spacing: 0.8rem;
   color: #D0D6F9;
@@ -41,7 +42,7 @@ body {
 }
 
 .bigTitle {
-  font-size: 130px;
+  font-size: 8rem;
   font-family: 'Bellefair', serif;
   text-transform: uppercase;
   margin: 1.3rem 0;
@@ -49,7 +50,7 @@ body {
 }
 
 .textContent {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 2rem;
   color: #D0D6F9;
 }
@@ -69,7 +70,6 @@ body {
     margin-right: -16%;
     z-index: 22;
   }
-
 
   .navbar {
     position: relative;
@@ -135,7 +135,7 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 32px;
+        font-size: 2rem;
         font-family: 'Bellefair', serif;
         text-transform: uppercase;
       }
@@ -154,11 +154,77 @@ body {
   background: url('../destination/background-destination-desktop.jpg') no-repeat center center/cover;
 
   .moonSection {
-    .moonLeft {
-      .moonImage {
-        width: 380px;
-        height: 380px;
-        margin-top: 5rem;
+    .leftDestination {
+      position: relative;
+      bottom: 0;
+
+      .destinationImage {
+        width: 100%;
+        margin-top: 4rem;
+
+        img {
+          max-width: calc(100% - 3rem);
+        }
+      }
+    }
+
+    .righttDestination {
+      width: 480px;
+
+      .destinationMenu {
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        list-style-type: none;
+
+        li {
+          padding: 10px 0;
+
+          a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #D0D6F9;
+            padding: 10px 0;
+            letter-spacing: 0.25rem;
+
+            &:hover {
+              border-bottom: 2px solid rgba($color: #FFFFFF, $alpha: 0.5);
+            }
+          }
+        }
+      }
+
+      .textContent {
+        margin-bottom: 2rem;
+      }
+
+      .aesthetic-bar {
+        width: 100%;
+        border: 1px solid #979797;
+      }
+
+      .distanceTime {
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        margin-top: 1.5rem;
+
+        .distance,
+        .time {
+          .title {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            color: #D0D6F9;
+          }
+
+          .number {
+            font-size: 1.75rem;
+            font-family: 'Bellefair', serif;
+            text-transform: uppercase;
+            color: #FFFFFF;
+          }
+        }
+
       }
     }
   }

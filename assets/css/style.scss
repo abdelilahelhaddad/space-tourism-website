@@ -30,7 +30,7 @@ body {
 }
 
 .smallTitle {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   word-spacing: 0.8rem;
   color: #D0D6F9;
@@ -42,7 +42,7 @@ body {
 }
 
 .bigTitle {
-  font-size: 8rem;
+  font-size: 6rem;
   font-family: 'Bellefair', serif;
   text-transform: uppercase;
   margin: 3% 0;
@@ -50,7 +50,7 @@ body {
 }
 
 .textContent {
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 2rem;
   color: #D0D6F9;
 }
@@ -152,8 +152,12 @@ body {
 .moonPage {
   height: 100vh;
   background: url('../destination/background-destination-desktop.jpg') no-repeat center center/cover;
+  position: relative;
 
   .moonSection {
+    display: flex;
+    justify-content: space-between;
+
     .leftDestination {
       position: relative;
       bottom: 0;
@@ -163,13 +167,13 @@ body {
         margin-top: 15%;
 
         img {
-          max-width: calc(100% - 3rem);
+          max-width: calc(100% - 8rem);
         }
       }
     }
 
     .righttDestination {
-      width: 480px;
+      width: 30rem;
 
       .destinationMenu {
         display: flex;

@@ -24,9 +24,9 @@ body {
   justify-content: space-between;
   align-items: flex-end;
   position: absolute;
-  bottom: 80px;
-  left: 165px;
-  right: 165px;
+  bottom: 5rem;
+  left: 10rem;
+  right: 10rem;
 }
 
 .smallTitle {
@@ -45,7 +45,7 @@ body {
   font-size: 8rem;
   font-family: 'Bellefair', serif;
   text-transform: uppercase;
-  margin: 1.3rem 0;
+  margin: 3% 0;
   color: #FFFFFF;
 }
 
@@ -160,7 +160,7 @@ body {
 
       .destinationImage {
         width: 100%;
-        margin-top: 4rem;
+        margin-top: 15%;
 
         img {
           max-width: calc(100% - 3rem);
@@ -195,7 +195,7 @@ body {
       }
 
       .textContent {
-        margin-bottom: 2rem;
+        margin-bottom: 8%;
       }
 
       .aesthetic-bar {
@@ -207,7 +207,7 @@ body {
         display: flex;
         justify-content: space-between;
         width: 75%;
-        margin-top: 1.5rem;
+        margin-top: 6%;
 
         .distance,
         .time {
@@ -222,6 +222,7 @@ body {
             font-family: 'Bellefair', serif;
             text-transform: uppercase;
             color: #FFFFFF;
+            margin-top: 4%;
           }
         }
 

@@ -15,102 +15,117 @@ body {
 }
 
 .active {
-  border-bottom: 2px solid #fff !important;
+  border-bottom: 2px solid #FFFFFF !important;
 }
 
-.homepage {
-  height: 100vh;
-  background: url('../home/background-home-desktop.jpg') no-repeat center center/cover;
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 80px;
+  left: 165px;
+  right: 165px;
+}
 
-  .nav {
+.smallTitle {
+  font-size: 28px;
+  text-transform: uppercase;
+  word-spacing: 0.8rem;
+  color: #D0D6F9;
+
+  .number {
+    color: #FFFFFF;
+    opacity: 0.25;
+  }
+}
+
+.bigTitle {
+  font-size: 130px;
+  font-family: 'Bellefair', serif;
+  text-transform: uppercase;
+  margin: 1.3rem 0;
+  color: #FFFFFF;
+}
+
+.textContent {
+  font-size: 20px;
+  line-height: 2rem;
+  color: #D0D6F9;
+}
+
+/**************************** NAVBAR ****************************/
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-left: 55px;
+
+  .aesthetic-bar {
+    width: 25%;
+    border: 1px solid #979797;
+    margin-right: -16%;
+    z-index: 22;
+  }
+
+
+  .navbar {
+    position: relative;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 40px;
-    padding-left: 55px;
+    justify-content: space-evenly;
+    width: 58%;
+    list-style-type: none;
+    z-index: 11;
 
-    .aesthetic-bar {
-      width: 25%;
-      border: 1px solid #979797;
-      margin-right: -16%;
-      z-index: 22;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba($color: #FFFFFF, $alpha: 0.05);
+      backdrop-filter: blur(10px);
+      z-index: -1;
     }
 
+    li {
+      padding: 30px 0;
 
-    .navbar {
-      position: relative;
-      display: flex;
-      justify-content: space-evenly;
-      width: 58%;
-      list-style-type: none;
-      z-index: 11;
-
-      &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgba($color: rgb(255, 255, 255), $alpha: 0.05);
-        backdrop-filter: blur(10px);
-        z-index: -1;
-      }
-
-      li {
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #FFFFFF;
         padding: 30px 0;
 
-        a {
-          text-decoration: none;
-          text-transform: uppercase;
-          color: #fff;
-          padding: 30px 0;
-
-          &:hover {
-            border-bottom: 2px solid rgba($color: #ffffff, $alpha: 0.5);
-          }
+        &:hover {
+          border-bottom: 2px solid rgba($color: #FFFFFF, $alpha: 0.5);
         }
       }
     }
   }
+}
+
+/**************************** HOME ****************************/
+
+.homePage {
+  height: 100vh;
+  background: url('../home/background-home-desktop.jpg') no-repeat center center/cover;
 
   .heroSection {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    position: absolute;
-    bottom: 80px;
-    left: 165px;
-    right: 165px;
 
     .homeContent {
       width: 25rem;
-      color: #fff;
 
-      .topContent {
-        font-size: 28px;
-        text-transform: uppercase;
-        word-spacing: 0.8rem;
-      }
-
-      .midContent {
-        font-size: 130px;
-        font-family: 'Bellefair', serif;
-        text-transform: uppercase;
-        margin: 1.3rem 0;
-      }
-
-      .bottomContent {
-        font-size: 20px;
-        line-height: 2rem;
-      }
     }
 
     .cta {
       width: 254px;
       height: 254px;
-      background: #fff;
-      color: #000;
+      background: #FFFFFF;
+      color: #000000;
       border-radius: 50%;
       text-decoration: none;
       position: relative;
@@ -126,7 +141,24 @@ body {
       }
 
       &:hover {
-        box-shadow: 0 0 0 70px rgba($color: #ffffff, $alpha: 0.1);
+        box-shadow: 0 0 0 70px rgba($color: #FFFFFF, $alpha: 0.1);
+      }
+    }
+  }
+}
+
+/**************************** DESTINATION ****************************/
+
+.moonPage {
+  height: 100vh;
+  background: url('../destination/background-destination-desktop.jpg') no-repeat center center/cover;
+
+  .moonSection {
+    .moonLeft {
+      .moonImage {
+        width: 380px;
+        height: 380px;
+        margin-top: 5rem;
       }
     }
   }

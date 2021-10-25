@@ -15,77 +15,10 @@ body {
 }
 
 .active {
-  border-bottom: 2px solid #fff !important;
+  border-bottom: 2px solid #FFFFFF !important;
 }
 
-.homepage {
-  height: 100vh;
-  background: url("../home/background-home-desktop.jpg") no-repeat center center/cover;
-}
-
-.homepage .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 40px;
-  padding-left: 55px;
-}
-
-.homepage .nav .aesthetic-bar {
-  width: 25%;
-  border: 1px solid #979797;
-  margin-right: -16%;
-  z-index: 22;
-}
-
-.homepage .nav .navbar {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  width: 58%;
-  list-style-type: none;
-  z-index: 11;
-}
-
-.homepage .nav .navbar::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(255, 255, 255, 0.05);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  z-index: -1;
-}
-
-.homepage .nav .navbar li {
-  padding: 30px 0;
-}
-
-.homepage .nav .navbar li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #fff;
-  padding: 30px 0;
-}
-
-.homepage .nav .navbar li a:hover {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-}
-
-.homepage .heroSection {
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,40 +34,116 @@ body {
   right: 165px;
 }
 
-.homepage .heroSection .homeContent {
-  width: 25rem;
-  color: #fff;
-}
-
-.homepage .heroSection .homeContent .topContent {
+.smallTitle {
   font-size: 28px;
   text-transform: uppercase;
   word-spacing: 0.8rem;
+  color: #D0D6F9;
 }
 
-.homepage .heroSection .homeContent .midContent {
+.smallTitle .number {
+  color: #FFFFFF;
+  opacity: 0.25;
+}
+
+.bigTitle {
   font-size: 130px;
   font-family: 'Bellefair', serif;
   text-transform: uppercase;
   margin: 1.3rem 0;
+  color: #FFFFFF;
 }
 
-.homepage .heroSection .homeContent .bottomContent {
+.textContent {
   font-size: 20px;
   line-height: 2rem;
+  color: #D0D6F9;
 }
 
-.homepage .heroSection .cta {
+/**************************** NAVBAR ****************************/
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 40px;
+  padding-left: 55px;
+}
+
+.nav .aesthetic-bar {
+  width: 25%;
+  border: 1px solid #979797;
+  margin-right: -16%;
+  z-index: 22;
+}
+
+.nav .navbar {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 58%;
+  list-style-type: none;
+  z-index: 11;
+}
+
+.nav .navbar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: -1;
+}
+
+.nav .navbar li {
+  padding: 30px 0;
+}
+
+.nav .navbar li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 30px 0;
+}
+
+.nav .navbar li a:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+/**************************** HOME ****************************/
+.homePage {
+  height: 100vh;
+  background: url("../home/background-home-desktop.jpg") no-repeat center center/cover;
+}
+
+.homePage .heroSection .homeContent {
+  width: 25rem;
+}
+
+.homePage .heroSection .cta {
   width: 254px;
   height: 254px;
-  background: #fff;
-  color: #000;
+  background: #FFFFFF;
+  color: #000000;
   border-radius: 50%;
   text-decoration: none;
   position: relative;
 }
 
-.homepage .heroSection .cta .ctaButton {
+.homePage .heroSection .cta .ctaButton {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -145,8 +154,20 @@ body {
   text-transform: uppercase;
 }
 
-.homepage .heroSection .cta:hover {
+.homePage .heroSection .cta:hover {
   -webkit-box-shadow: 0 0 0 70px rgba(255, 255, 255, 0.1);
           box-shadow: 0 0 0 70px rgba(255, 255, 255, 0.1);
+}
+
+/**************************** DESTINATION ****************************/
+.moonPage {
+  height: 100vh;
+  background: url("../destination/background-destination-desktop.jpg") no-repeat center center/cover;
+}
+
+.moonPage .moonSection .moonLeft .moonImage {
+  width: 380px;
+  height: 380px;
+  margin-top: 5rem;
 }
 /*# sourceMappingURL=style.css.map */

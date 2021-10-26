@@ -234,3 +234,35 @@ body {
     }
   }
 }
+
+/**************************** CREW ****************************/
+
+.crewPage {
+  height: 100vh;
+  background: url('../crew/background-crew-desktop.jpg') no-repeat center center/cover;
+  position: relative;
+
+  .crewSection {
+    bottom: 0;
+    right: 0;
+
+    .leftCrew {
+      width: 30rem;
+      position: relative;
+      bottom: 5rem;
+    }
+
+    .righttCrew {
+      position: relative;
+
+      .crewImage {
+        bottom: 0 !important;
+        right: 0;
+
+        img {
+          max-width: calc(100% - 10rem);
+        }
+      }
+    }
+  }
+}

@@ -256,4 +256,35 @@ body {
   color: #FFFFFF;
   margin-top: 4%;
 }
+
+/**************************** CREW ****************************/
+.crewPage {
+  height: 100vh;
+  background: url("../crew/background-crew-desktop.jpg") no-repeat center center/cover;
+  position: relative;
+}
+
+.crewPage .crewSection {
+  bottom: 0;
+  right: 0;
+}
+
+.crewPage .crewSection .leftCrew {
+  width: 30rem;
+  position: relative;
+  bottom: 5rem;
+}
+
+.crewPage .crewSection .righttCrew {
+  position: relative;
+}
+
+.crewPage .crewSection .righttCrew .crewImage {
+  bottom: 0 !important;
+  right: 0;
+}
+
+.crewPage .crewSection .righttCrew .crewImage img {
+  max-width: calc(100% - 10rem);
+}
 /*# sourceMappingURL=style.css.map */

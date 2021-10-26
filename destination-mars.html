@@ -1,37 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
+
 <body>
+  <main class="moonPage">
+    <nav class="nav">
+      <div class="logo">
+        <a href="index.html">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="24" fill="white" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M24 0C24 0 24 24 0 24C23.5776 24.1714 24 48 24 48C24 48 24 24 48 24C24 24 24 0 24 0Z" fill="#0B0D17" />
+          </svg>
+        </a>
+      </div>
+      <div class="aesthetic-bar"></div>
+      <ul class="navbar">
+        <li><a href="index.html"><span>00</span> Home</a></li>
+        <li><a href="destination-moon.html" class="active"><span>01</span> Destination</a></li>
+        <li><a href="crew-commander.html"><span>02</span> Crew</a></li>
+        <li><a href="technology-vehicle.html"><span>03</span> Technology</a></li>
+      </ul>
+    </nav>
+    <div class="container moonSection">
+      <div class="leftDestination">
+        <p class="smallTitle"><span class="number">01</span> Pick your destination</p>
+        <div class="destinationImage">
+          <img src="assets/destination/image-mars.webp" alt="Moon Image">
+        </div>
+      </div>
+      <div class="righttDestination">
+        <ul class="destinationMenu">
+          <li><a href="destination-moon.html">Moon</a></li>
+          <li><a href="destination-mars.html" class="active">Mars</a></li>
+          <li><a href="destination-europa.html">Europa</a></li>
+          <li><a href="destination-titan.html">Titan</a></li>
+        </ul>
+        <p class="bigTitle">Mars</p>
+        <p class="textContent">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the
+          tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>
+        <div class="aesthetic-bar"></div>
+        <div class="distanceTime">
+          <div class="distance">
+            <p class="title">Avg. distance</p>
+            <p class="number">225 mil. km</p>
+          </div>
+          <div class="time">
+            <p class="title">Est. travel time</p>
+            <p class="number">9 months</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  01 Pick your destination
-
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Mars
-
-  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
-  the tallest planetary mountain in our solar system. It’s two and a half times 
-  the size of Everest!
-
-  Avg. distance
-  225 mil. km
-
-  Est. travel time
-  9 months
 </body>
+
+</html>
+
+</body>
+
 </html>

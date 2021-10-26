@@ -247,9 +247,48 @@ body {
     right: 0;
 
     .leftCrew {
-      width: 30rem;
+      width: 25rem;
       position: relative;
       bottom: 5rem;
+
+      h4.speciality {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-family: 'Bellefair', serif;
+        color: #FFFFFF;
+        opacity: 0.25;
+        margin-top: 6rem;
+      }
+
+      h3.fullName {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-family: 'Bellefair', serif;
+        color: #FFFFFF;
+        margin: 0.7rem 0 1.5rem 0;
+      }
+
+      p.textContent {
+        margin-bottom: 4rem;
+      }
+
+      .pagination {
+
+        a {
+          .dot {
+            height: 1rem;
+            width: 1rem;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 1.5rem;
+            background-color: #979797;
+          }
+
+          .filled {
+            background-color: #FFFFFF;
+          }
+        }
+      }
     }
 
     .righttCrew {

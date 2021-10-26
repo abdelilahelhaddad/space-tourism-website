@@ -270,9 +270,43 @@ body {
 }
 
 .crewPage .crewSection .leftCrew {
-  width: 30rem;
+  width: 25rem;
   position: relative;
   bottom: 5rem;
+}
+
+.crewPage .crewSection .leftCrew h4.speciality {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: 'Bellefair', serif;
+  color: #FFFFFF;
+  opacity: 0.25;
+  margin-top: 6rem;
+}
+
+.crewPage .crewSection .leftCrew h3.fullName {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: 'Bellefair', serif;
+  color: #FFFFFF;
+  margin: 0.7rem 0 1.5rem 0;
+}
+
+.crewPage .crewSection .leftCrew p.textContent {
+  margin-bottom: 4rem;
+}
+
+.crewPage .crewSection .leftCrew .pagination a .dot {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 1.5rem;
+  background-color: #979797;
+}
+
+.crewPage .crewSection .leftCrew .pagination a .filled {
+  background-color: #FFFFFF;
 }
 
 .crewPage .crewSection .righttCrew {

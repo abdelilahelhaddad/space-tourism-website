@@ -303,10 +303,16 @@ body {
   display: inline-block;
   margin-right: 1.5rem;
   background-color: #979797;
+  opacity: 0.6;
+}
+
+.crewPage .crewSection .leftCrew .pagination a .dot:hover {
+  opacity: 1;
 }
 
 .crewPage .crewSection .leftCrew .pagination a .filled {
   background-color: #FFFFFF;
+  opacity: 1;
 }
 
 .crewPage .crewSection .righttCrew {
@@ -319,6 +325,42 @@ body {
 }
 
 .crewPage .crewSection .righttCrew .crewImage img {
+  max-width: calc(100% - 10rem);
+}
+
+/************************* TECHNOLOGY *************************/
+.techPage {
+  height: 100vh;
+  background: url("../technology/background-technology-desktop.jpg") no-repeat center center/cover;
+  position: relative;
+}
+
+.techPage .techSection {
+  right: 0rem;
+}
+
+.techPage .techSection .leftTech {
+  width: 28rem;
+  position: relative;
+}
+
+.techPage .techSection .leftTech .content .techContent h3.fullName {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: 'Bellefair', serif;
+  color: #FFFFFF;
+}
+
+.techPage .techSection .righttTech .techImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.techPage .techSection .righttTech .techImage img {
   max-width: calc(100% - 10rem);
 }
 /*# sourceMappingURL=style.css.map */

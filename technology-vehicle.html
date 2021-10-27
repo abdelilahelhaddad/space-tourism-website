@@ -1,32 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
+
 <body>
+  <main class="techPage">
+    <nav class="nav">
+      <div class="logo">
+        <a href="index.html">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="24" fill="white" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M24 0C24 0 24 24 0 24C23.5776 24.1714 24 48 24 48C24 48 24 24 48 24C24 24 24 0 24 0Z" fill="#0B0D17" />
+          </svg>
+        </a>
+      </div>
+      <div class="aesthetic-bar"></div>
+      <ul class="navbar">
+        <li><a href="index.html"><span>00</span> Home</a></li>
+        <li><a href="destination-moon.html"><span>01</span> Destination</a></li>
+        <li><a href="crew-commander.html"><span>02</span> Crew</a></li>
+        <li><a href="technology-vehicle.html" class="active"><span>03</span> Technology</a></li>
+      </ul>
+    </nav>
+    <div class="container techSection">
+      <div class="leftTech">
+        <p class="smallTitle"><span class="number">03</span> Space launch 101</p>
+        <div class="content">
+          <div class="techContent">
+            <p class="textContent title">The terminology...</p>
+            <h3 class="fullName">Launch vehicle</h3>
+            <p class="textContent">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
+              payload from Earth's surface to space, usually to Earth orbit or beyond. Our
+              WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,
+              it's quite an awe-inspiring sight on the launch pad!</p>
+          </div>
+          <div class="slider">
+            <a href="technology-vehicle.html"><span class="circle filled"></span></a>
+            <a href="technology-spaceport.html"><span class="circle"></span></a>
+            <a href="technology-capsule.html"><span class="circle"></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="righttTech">
+        <div class="techImage">
+          <img src="assets/technology/image-launch-vehicle-portrait.jpg" alt="Launch Vehicle">
+        </div>
+      </div>
+    </div>
+  </main>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  03 Space launch 101
-
-  1
-  2
-  3
-
-  The terminology...
-  Launch vehicle
-
-  A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
-  payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
-  WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
-  it's quite an awe-inspiring sight on the launch pad!
 </body>
+
 </html>

@@ -342,6 +342,11 @@ body {
 .techPage .techSection .leftTech {
   width: 35rem;
   position: relative;
+  margin-bottom: 4rem;
+}
+
+.techPage .techSection .leftTech .smallTitle {
+  margin-bottom: 5rem;
 }
 
 .techPage .techSection .leftTech .content {
@@ -351,7 +356,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 5rem;
 }
 
 .techPage .techSection .leftTech .content .slider {
@@ -416,6 +420,6 @@ body {
 }
 
 .techPage .techSection .righttTech .techImage img {
-  max-width: calc(100% - 6rem);
+  max-width: calc(100% - 7rem);
 }
 /*# sourceMappingURL=style.css.map */

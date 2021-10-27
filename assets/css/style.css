@@ -410,7 +410,7 @@ body {
   margin: 0.7rem 0 1.5rem 0;
 }
 
-.techPage .techSection .righttTech .techImage {
+.techPage .techSection .rightTech .techImage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -419,7 +419,7 @@ body {
           justify-content: flex-end;
 }
 
-.techPage .techSection .righttTech .techImage img {
+.techPage .techSection .rightTech .techImage img {
   max-width: calc(100% - 7rem);
 }
 /*# sourceMappingURL=style.css.map */

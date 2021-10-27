@@ -340,8 +340,61 @@ body {
 }
 
 .techPage .techSection .leftTech {
-  width: 28rem;
+  width: 35rem;
   position: relative;
+}
+
+.techPage .techSection .leftTech .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.techPage .techSection .leftTech .content .slider {
+  margin-right: 4rem;
+}
+
+.techPage .techSection .leftTech .content .slider a {
+  text-decoration: none;
+}
+
+.techPage .techSection .leftTech .content .slider a .circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: 1px solid #979797;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-family: 'Bellefair', serif;
+}
+
+.techPage .techSection .leftTech .content .slider a .circle:hover {
+  border: 1px solid #FFFFFF;
+}
+
+.techPage .techSection .leftTech .content .slider .filled {
+  color: #0B0D17 !important;
+  background-color: #FFFFFF !important;
+}
+
+.techPage .techSection .leftTech .content .techContent .title {
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 
 .techPage .techSection .leftTech .content .techContent h3.fullName {
@@ -349,6 +402,8 @@ body {
   text-transform: uppercase;
   font-family: 'Bellefair', serif;
   color: #FFFFFF;
+  letter-spacing: 0.2rem;
+  margin: 0.7rem 0 1.5rem 0;
 }
 
 .techPage .techSection .righttTech .techImage {
@@ -361,6 +416,6 @@ body {
 }
 
 .techPage .techSection .righttTech .techImage img {
-  max-width: calc(100% - 10rem);
+  max-width: calc(100% - 6rem);
 }
 /*# sourceMappingURL=style.css.map */

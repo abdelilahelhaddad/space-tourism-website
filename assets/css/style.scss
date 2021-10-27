@@ -323,16 +323,60 @@ body {
     right: 0rem;
 
     .leftTech {
-      width: 28rem;
+      width: 35rem;
       position: relative;
 
       .content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5rem;
+
+        .slider {
+          margin-right: 4rem;
+
+          a {
+            text-decoration: none;
+
+            .circle {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 4rem;
+              width: 4rem;
+              border-radius: 50%;
+              color: #FFFFFF;
+              background-color: transparent;
+              border: 1px solid #979797;
+              margin-bottom: 1.5rem;
+              font-size: 2rem;
+              font-family: 'Bellefair', serif;
+
+              &:hover {
+                border: 1px solid #FFFFFF;
+              }
+            }
+          }
+
+          .filled {
+            color: #0B0D17 !important;
+            background-color: #FFFFFF !important;
+          }
+
+        }
+
         .techContent {
+          .title {
+            font-size: 1rem;
+            text-transform: uppercase;
+          }
+
           h3.fullName {
             font-size: 2.5rem;
             text-transform: uppercase;
             font-family: 'Bellefair', serif;
             color: #FFFFFF;
+            letter-spacing: 0.2rem;
+            margin: 0.7rem 0 1.5rem 0;
           }
         }
       }
@@ -345,7 +389,7 @@ body {
         justify-content: flex-end;
 
         img {
-          max-width: calc(100% - 10rem);
+          max-width: calc(100% - 6rem);
         }
       }
     }

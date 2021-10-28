@@ -30,7 +30,6 @@ body {
 
   @media screen AND (max-width:768px) {
     flex-direction: column;
-    bottom: 2rem;
     justify-content: center;
     align-items: center;
   }
@@ -46,10 +45,6 @@ body {
     color: #FFFFFF;
     opacity: 0.25;
   }
-
-  @media screen AND (max-width:768px) {
-    font-size: 1rem;
-  }
 }
 
 .bigTitle {
@@ -58,17 +53,16 @@ body {
   text-transform: uppercase;
   margin: 3% 0;
   color: #FFFFFF;
+
+  @media screen AND (max-width:768px) {
+    font-size: 9rem;
+  }
 }
 
 .textContent {
   font-size: 1rem;
   line-height: 2rem;
   color: #D0D6F9;
-
-  @media screen AND (max-width:768px) {
-    line-height: 1.7rem;
-    margin-bottom: 2rem;
-  }
 }
 
 /**************************** NAVBAR ****************************/
@@ -91,7 +85,7 @@ body {
     position: relative;
     display: flex;
     justify-content: space-evenly;
-    width: 58%;
+    width: 60%;
     list-style-type: none;
     z-index: 11;
 
@@ -121,12 +115,10 @@ body {
         }
 
         @media screen AND (max-width:768px) {
-          padding: 22px 0;
+          span {
+            display: none;
+          }
         }
-      }
-
-      @media screen AND (max-width:768px) {
-        padding: 22px 0;
       }
     }
   }
@@ -180,14 +172,17 @@ body {
       }
 
       @media screen AND (max-width:768px) {
-        width: 8.75rem;
-        height: 8.75rem;
-
-        .ctaButton {
-          font-size: 1.5rem;
-        }
+        margin-top: 12rem;
       }
     }
+
+    @media screen AND (max-width:768px) {
+      height: none;
+    }
+  }
+
+  @media screen AND (max-width:768px) {
+    background: url('../home/background-home-tablet.jpg') no-repeat center center/cover;
   }
 }
 

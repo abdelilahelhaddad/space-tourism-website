@@ -41,7 +41,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    bottom: 2rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -63,12 +62,6 @@ body {
   opacity: 0.25;
 }
 
-@media screen and (max-width: 768px) {
-  .smallTitle {
-    font-size: 1rem;
-  }
-}
-
 .bigTitle {
   font-size: 6rem;
   font-family: 'Bellefair', serif;
@@ -77,17 +70,16 @@ body {
   color: #FFFFFF;
 }
 
+@media screen and (max-width: 768px) {
+  .bigTitle {
+    font-size: 9rem;
+  }
+}
+
 .textContent {
   font-size: 1rem;
   line-height: 2rem;
   color: #D0D6F9;
-}
-
-@media screen and (max-width: 768px) {
-  .textContent {
-    line-height: 1.7rem;
-    margin-bottom: 2rem;
-  }
 }
 
 /**************************** NAVBAR ****************************/
@@ -120,7 +112,7 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 58%;
+  width: 60%;
   list-style-type: none;
   z-index: 11;
 }
@@ -154,14 +146,8 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .nav .navbar li a {
-    padding: 22px 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .nav .navbar li {
-    padding: 22px 0;
+  .nav .navbar li a span {
+    display: none;
   }
 }
 
@@ -218,11 +204,19 @@ body {
 
 @media screen and (max-width: 768px) {
   .homePage .heroSection .cta {
-    width: 8.75rem;
-    height: 8.75rem;
+    margin-top: 12rem;
   }
-  .homePage .heroSection .cta .ctaButton {
-    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .homePage .heroSection {
+    height: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homePage {
+    background: url("../home/background-home-tablet.jpg") no-repeat center center/cover;
   }
 }
 

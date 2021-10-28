@@ -27,6 +27,13 @@ body {
   bottom: 5rem;
   left: 10rem;
   right: 10rem;
+
+  @media screen AND (max-width:768px) {
+    flex-direction: column;
+    bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .smallTitle {
@@ -38,6 +45,10 @@ body {
   .number {
     color: #FFFFFF;
     opacity: 0.25;
+  }
+
+  @media screen AND (max-width:768px) {
+    font-size: 1rem;
   }
 }
 
@@ -53,6 +64,11 @@ body {
   font-size: 1rem;
   line-height: 2rem;
   color: #D0D6F9;
+
+  @media screen AND (max-width:768px) {
+    line-height: 1.7rem;
+    margin-bottom: 2rem;
+  }
 }
 
 /**************************** NAVBAR ****************************/
@@ -103,7 +119,23 @@ body {
         &:hover {
           border-bottom: 2px solid rgba($color: #FFFFFF, $alpha: 0.5);
         }
+
+        @media screen AND (max-width:768px) {
+          padding: 22px 0;
+        }
       }
+
+      @media screen AND (max-width:768px) {
+        padding: 22px 0;
+      }
+    }
+  }
+
+  @media screen AND (max-width:768px) {
+    padding-top: 0;
+
+    .aesthetic-bar {
+      display: none;
     }
   }
 }
@@ -119,11 +151,14 @@ body {
     .homeContent {
       width: 25rem;
 
+      @media screen AND (max-width:768px) {
+        text-align: center;
+      }
     }
 
     .cta {
-      width: 254px;
-      height: 254px;
+      width: 16rem;
+      height: 16rem;
       background: #FFFFFF;
       color: #000000;
       border-radius: 50%;
@@ -142,6 +177,15 @@ body {
 
       &:hover {
         box-shadow: 0 0 0 70px rgba($color: #FFFFFF, $alpha: 0.1);
+      }
+
+      @media screen AND (max-width:768px) {
+        width: 8.75rem;
+        height: 8.75rem;
+
+        .ctaButton {
+          font-size: 1.5rem;
+        }
       }
     }
   }

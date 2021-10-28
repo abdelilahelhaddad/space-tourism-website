@@ -35,6 +35,22 @@ body {
   right: 10rem;
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    bottom: 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .smallTitle {
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -45,6 +61,12 @@ body {
 .smallTitle .number {
   color: #FFFFFF;
   opacity: 0.25;
+}
+
+@media screen and (max-width: 768px) {
+  .smallTitle {
+    font-size: 1rem;
+  }
 }
 
 .bigTitle {
@@ -59,6 +81,13 @@ body {
   font-size: 1rem;
   line-height: 2rem;
   color: #D0D6F9;
+}
+
+@media screen and (max-width: 768px) {
+  .textContent {
+    line-height: 1.7rem;
+    margin-bottom: 2rem;
+  }
 }
 
 /**************************** NAVBAR ****************************/
@@ -124,6 +153,27 @@ body {
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
 
+@media screen and (max-width: 768px) {
+  .nav .navbar li a {
+    padding: 22px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav .navbar li {
+    padding: 22px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    padding-top: 0;
+  }
+  .nav .aesthetic-bar {
+    display: none;
+  }
+}
+
 /**************************** HOME ****************************/
 .homePage {
   height: 100vh;
@@ -134,9 +184,15 @@ body {
   width: 25rem;
 }
 
+@media screen and (max-width: 768px) {
+  .homePage .heroSection .homeContent {
+    text-align: center;
+  }
+}
+
 .homePage .heroSection .cta {
-  width: 254px;
-  height: 254px;
+  width: 16rem;
+  height: 16rem;
   background: #FFFFFF;
   color: #000000;
   border-radius: 50%;
@@ -158,6 +214,16 @@ body {
 .homePage .heroSection .cta:hover {
   -webkit-box-shadow: 0 0 0 70px rgba(255, 255, 255, 0.1);
           box-shadow: 0 0 0 70px rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .homePage .heroSection .cta {
+    width: 8.75rem;
+    height: 8.75rem;
+  }
+  .homePage .heroSection .cta .ctaButton {
+    font-size: 1.5rem;
+  }
 }
 
 /**************************** DESTINATION ****************************/

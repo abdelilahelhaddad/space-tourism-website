@@ -223,7 +223,7 @@ body {
 /**************************** DESTINATION ****************************/
 .moonPage {
   height: 100vh;
-  background: url("../destination/background-destination-desktop.jpg") no-repeat center center/cover;
+  background: url("../destination/background-destination-tablet.jpg") no-repeat center center/cover;
   position: relative;
 }
 
@@ -354,7 +354,7 @@ body {
 /**************************** CREW ****************************/
 .crewPage {
   height: 100vh;
-  background: url("../crew/background-crew-desktop.jpg") no-repeat center center/cover;
+  background: url("../crew/background-crew-tablet.jpg") no-repeat center center/cover;
   position: relative;
 }
 
@@ -369,6 +369,12 @@ body {
   bottom: 5rem;
 }
 
+@media screen and (max-width: 768px) {
+  .crewPage .crewSection .leftCrew .smallTitle {
+    margin-left: -90%;
+  }
+}
+
 .crewPage .crewSection .leftCrew h4.speciality {
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -376,6 +382,12 @@ body {
   color: #FFFFFF;
   opacity: 0.25;
   margin-top: 6rem;
+}
+
+@media screen and (max-width: 768px) {
+  .crewPage .crewSection .leftCrew h4.speciality {
+    margin-top: 3rem;
+  }
 }
 
 .crewPage .crewSection .leftCrew h3.fullName {
@@ -409,17 +421,37 @@ body {
   opacity: 1;
 }
 
-.crewPage .crewSection .righttCrew {
+@media screen and (max-width: 768px) {
+  .crewPage .crewSection .leftCrew {
+    bottom: 1rem;
+  }
+}
+
+.crewPage .crewSection .rightCrew {
   position: relative;
 }
 
-.crewPage .crewSection .righttCrew .crewImage {
+.crewPage .crewSection .rightCrew .crewImage {
   bottom: 0 !important;
   right: 0;
 }
 
-.crewPage .crewSection .righttCrew .crewImage img {
+.crewPage .crewSection .rightCrew .crewImage img {
   max-width: calc(100% - 10rem);
+}
+
+@media screen and (max-width: 768px) {
+  .crewPage .crewSection .rightCrew .crewImage img {
+    max-width: 100%;
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .crewPage .crewSection {
+    text-align: center;
+    right: auto;
+  }
 }
 
 /************************* TECHNOLOGY *************************/

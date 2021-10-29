@@ -53,10 +53,6 @@ body {
   text-transform: uppercase;
   margin: 3% 0;
   color: #FFFFFF;
-
-  @media screen AND (max-width:768px) {
-    font-size: 9rem;
-  }
 }
 
 .textContent {
@@ -146,6 +142,12 @@ body {
       @media screen AND (max-width:768px) {
         text-align: center;
       }
+
+      .bigTitle {
+        @media screen AND (max-width:768px) {
+          font-size: 9rem;
+        }
+      }
     }
 
     .cta {
@@ -201,6 +203,12 @@ body {
       position: relative;
       bottom: 0;
 
+      .smallTitle {
+        @media screen AND (max-width:768px) {
+          margin-left: -90%;
+        }
+      }
+
       .destinationImage {
         width: 100%;
         margin-top: 15%;
@@ -234,6 +242,11 @@ body {
               border-bottom: 2px solid rgba($color: #FFFFFF, $alpha: 0.5);
             }
           }
+        }
+
+        @media screen AND (max-width:768px) {
+          width: none;
+          margin: 0 5rem;
         }
       }
 
@@ -269,7 +282,20 @@ body {
           }
         }
 
+        @media screen AND (max-width:768px) {
+          text-align: center;
+          width: 100%;
+          justify-content: space-around;
+        }
       }
+
+      @media screen AND (max-width:768px) {
+        margin-top: 1rem;
+      }
+    }
+
+    @media screen AND (max-width:768px) {
+      text-align: center;
     }
   }
 }

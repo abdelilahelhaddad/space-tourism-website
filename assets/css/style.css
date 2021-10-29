@@ -70,12 +70,6 @@ body {
   color: #FFFFFF;
 }
 
-@media screen and (max-width: 768px) {
-  .bigTitle {
-    font-size: 9rem;
-  }
-}
-
 .textContent {
   font-size: 1rem;
   line-height: 2rem;
@@ -176,6 +170,12 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .homePage .heroSection .homeContent .bigTitle {
+    font-size: 9rem;
+  }
+}
+
 .homePage .heroSection .cta {
   width: 16rem;
   height: 16rem;
@@ -241,6 +241,12 @@ body {
   bottom: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .moonPage .moonSection .leftDestination .smallTitle {
+    margin-left: -90%;
+  }
+}
+
 .moonPage .moonSection .leftDestination .destinationImage {
   width: 100%;
   margin-top: 15%;
@@ -281,6 +287,13 @@ body {
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
 
+@media screen and (max-width: 768px) {
+  .moonPage .moonSection .righttDestination .destinationMenu {
+    width: none;
+    margin: 0 5rem;
+  }
+}
+
 .moonPage .moonSection .righttDestination .textContent {
   margin-bottom: 8%;
 }
@@ -315,6 +328,27 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-top: 4%;
+}
+
+@media screen and (max-width: 768px) {
+  .moonPage .moonSection .righttDestination .distanceTime {
+    text-align: center;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .moonPage .moonSection .righttDestination {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .moonPage .moonSection {
+    text-align: center;
+  }
 }
 
 /**************************** CREW ****************************/

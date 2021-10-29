@@ -192,7 +192,7 @@ body {
 
 .moonPage {
   height: 100vh;
-  background: url('../destination/background-destination-tablet.jpg') no-repeat center center/cover;
+  background: url('../destination/background-destination-desktop.jpg') no-repeat center center/cover;
   position: relative;
 
   .moonSection {
@@ -298,13 +298,17 @@ body {
       text-align: center;
     }
   }
+
+  @media screen AND (max-width:768px) {
+    background: url('../destination/background-destination-tablet.jpg') no-repeat center center/cover;
+  }
 }
 
 /**************************** CREW ****************************/
 
 .crewPage {
   height: 100vh;
-  background: url('../crew/background-crew-tablet.jpg') no-repeat center center/cover;
+  background: url('../crew/background-crew-desktop.jpg') no-repeat center center/cover;
   position: relative;
 
   .crewSection {
@@ -399,6 +403,10 @@ body {
       right: auto;
     }
   }
+
+  @media screen AND (max-width:768px) {
+    background: url('../crew/background-crew-tablet.jpg') no-repeat center center/cover;
+  }
 }
 
 /************************* TECHNOLOGY *************************/
@@ -455,12 +463,21 @@ body {
             background-color: #FFFFFF !important;
           }
 
+          @media screen AND (max-width:768px) {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0 8rem;
+          }
         }
 
         .techContent {
           .title {
             font-size: 1rem;
             text-transform: uppercase;
+
+            @media screen AND (max-width:768px) {
+              font-size: 1.5rem;
+            }
           }
 
           h3.fullName {
@@ -472,6 +489,23 @@ body {
             margin: 0.7rem 0 1.5rem 0;
           }
         }
+
+        @media screen AND (max-width:768px) {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+
+      @media screen AND (max-width:768px) {
+        order: 2;
+        position: static;
+
+        .smallTitle {
+          margin-bottom: 3rem;
+          position: absolute;
+          top: -15%;
+          margin-left: -5%;
+        }
       }
     }
 
@@ -481,10 +515,42 @@ body {
         display: flex;
         justify-content: flex-end;
 
+        .landscape {
+          display: none;
+        }
+
         img {
           max-width: calc(100% - 7rem);
         }
       }
+
+      @media screen AND (max-width:768px) {
+        order: 1;
+        margin-bottom: 3rem;
+
+        .techImage {
+
+          .landscape {
+            display: block;
+          }
+
+          .portrait {
+            display: none;
+          }
+
+          img {
+            max-width: 100%;
+          }
+        }
+      }
     }
+
+    @media screen AND (max-width:768px) {
+      left: 0;
+    }
+  }
+
+  @media screen AND (max-width:768px) {
+    background: url('../technology/background-technology-tablet.jpg') no-repeat center center/cover;
   }
 }

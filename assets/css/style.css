@@ -223,7 +223,7 @@ body {
 /**************************** DESTINATION ****************************/
 .moonPage {
   height: 100vh;
-  background: url("../destination/background-destination-tablet.jpg") no-repeat center center/cover;
+  background: url("../destination/background-destination-desktop.jpg") no-repeat center center/cover;
   position: relative;
 }
 
@@ -351,10 +351,16 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .moonPage {
+    background: url("../destination/background-destination-tablet.jpg") no-repeat center center/cover;
+  }
+}
+
 /**************************** CREW ****************************/
 .crewPage {
   height: 100vh;
-  background: url("../crew/background-crew-tablet.jpg") no-repeat center center/cover;
+  background: url("../crew/background-crew-desktop.jpg") no-repeat center center/cover;
   position: relative;
 }
 
@@ -454,6 +460,12 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .crewPage {
+    background: url("../crew/background-crew-tablet.jpg") no-repeat center center/cover;
+  }
+}
+
 /************************* TECHNOLOGY *************************/
 .techPage {
   height: 100vh;
@@ -522,9 +534,27 @@ body {
   background-color: #FFFFFF !important;
 }
 
+@media screen and (max-width: 768px) {
+  .techPage .techSection .leftTech .content .slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 0 8rem;
+  }
+}
+
 .techPage .techSection .leftTech .content .techContent .title {
   font-size: 1rem;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .techPage .techSection .leftTech .content .techContent .title {
+    font-size: 1.5rem;
+  }
 }
 
 .techPage .techSection .leftTech .content .techContent h3.fullName {
@@ -536,6 +566,31 @@ body {
   margin: 0.7rem 0 1.5rem 0;
 }
 
+@media screen and (max-width: 768px) {
+  .techPage .techSection .leftTech .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .techPage .techSection .leftTech {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    position: static;
+  }
+  .techPage .techSection .leftTech .smallTitle {
+    margin-bottom: 3rem;
+    position: absolute;
+    top: -15%;
+    margin-left: -5%;
+  }
+}
+
 .techPage .techSection .rightTech .techImage {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -545,7 +600,41 @@ body {
           justify-content: flex-end;
 }
 
+.techPage .techSection .rightTech .techImage .landscape {
+  display: none;
+}
+
 .techPage .techSection .rightTech .techImage img {
   max-width: calc(100% - 7rem);
+}
+
+@media screen and (max-width: 768px) {
+  .techPage .techSection .rightTech {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 3rem;
+  }
+  .techPage .techSection .rightTech .techImage .landscape {
+    display: block;
+  }
+  .techPage .techSection .rightTech .techImage .portrait {
+    display: none;
+  }
+  .techPage .techSection .rightTech .techImage img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .techPage .techSection {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .techPage {
+    background: url("../technology/background-technology-tablet.jpg") no-repeat center center/cover;
+  }
 }
 /*# sourceMappingURL=style.css.map */

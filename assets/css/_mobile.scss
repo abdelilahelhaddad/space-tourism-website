@@ -1,0 +1,37 @@
+.homePage {
+  background: url(../home/background-home-mobile.jpg) no-repeat center center/cover;
+
+  .nav {
+    padding: 1.25rem;
+
+    .navbar {
+      display: none;
+    }
+  }
+
+  .heroSection {
+    bottom: 3rem;
+
+    .homeContent {
+      width: 20rem;
+
+      .smallTitle {
+        font-size: 1rem;
+      }
+
+      .bigTitle {
+        font-size: 5rem;
+      }
+    }
+
+    .cta {
+      width: 10rem;
+      height: 10rem;
+      margin-top: 3rem;
+
+      .ctaButton {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

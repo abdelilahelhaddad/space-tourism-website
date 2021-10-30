@@ -653,4 +653,42 @@ body {
     background: url("../technology/background-technology-tablet.jpg") no-repeat center center/cover;
   }
 }
+
+.homePage {
+  background: url(../home/background-home-mobile.jpg) no-repeat center center/cover;
+}
+
+.homePage .nav {
+  padding: 1.25rem;
+}
+
+.homePage .nav .navbar {
+  display: none;
+}
+
+.homePage .heroSection {
+  bottom: 3rem;
+}
+
+.homePage .heroSection .homeContent {
+  width: 20rem;
+}
+
+.homePage .heroSection .homeContent .smallTitle {
+  font-size: 1rem;
+}
+
+.homePage .heroSection .homeContent .bigTitle {
+  font-size: 5rem;
+}
+
+.homePage .heroSection .cta {
+  width: 10rem;
+  height: 10rem;
+  margin-top: 3rem;
+}
+
+.homePage .heroSection .cta .ctaButton {
+  font-size: 1.5rem;
+}
 /*# sourceMappingURL=style.css.map */

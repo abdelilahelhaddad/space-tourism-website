@@ -35,21 +35,6 @@ body {
   right: 10rem;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
 .smallTitle {
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -98,6 +83,10 @@ body {
   z-index: 22;
 }
 
+.nav .mobileNav {
+  display: none;
+}
+
 .nav .navbar {
   position: relative;
   display: -webkit-box;
@@ -109,6 +98,10 @@ body {
   width: 60%;
   list-style-type: none;
   z-index: 11;
+}
+
+.nav .navbar .close {
+  display: none;
 }
 
 .nav .navbar::before {
@@ -139,21 +132,6 @@ body {
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
 
-@media screen and (max-width: 768px) {
-  .nav .navbar li a span {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .nav {
-    padding-top: 0;
-  }
-  .nav .aesthetic-bar {
-    display: none;
-  }
-}
-
 /**************************** HOME ****************************/
 .homePage {
   height: 100vh;
@@ -162,18 +140,6 @@ body {
 
 .homePage .heroSection .homeContent {
   width: 25rem;
-}
-
-@media screen and (max-width: 768px) {
-  .homePage .heroSection .homeContent {
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .homePage .heroSection .homeContent .bigTitle {
-    font-size: 9rem;
-  }
 }
 
 .homePage .heroSection .cta {
@@ -202,24 +168,6 @@ body {
           box-shadow: 0 0 0 70px rgba(255, 255, 255, 0.1);
 }
 
-@media screen and (max-width: 768px) {
-  .homePage .heroSection .cta {
-    margin-top: 12rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .homePage .heroSection {
-    height: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .homePage {
-    background: url("../home/background-home-tablet.jpg") no-repeat center center/cover;
-  }
-}
-
 /**************************** DESTINATION ****************************/
 .moonPage {
   height: 100vh;
@@ -239,12 +187,6 @@ body {
 .moonPage .moonSection .leftDestination {
   position: relative;
   bottom: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .moonPage .moonSection .leftDestination .smallTitle {
-    margin-left: -90%;
-  }
 }
 
 .moonPage .moonSection .leftDestination .destinationImage {
@@ -287,13 +229,6 @@ body {
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
 
-@media screen and (max-width: 768px) {
-  .moonPage .moonSection .righttDestination .destinationMenu {
-    width: none;
-    margin: 0 5rem;
-  }
-}
-
 .moonPage .moonSection .righttDestination .textContent {
   margin-bottom: 8%;
 }
@@ -330,33 +265,6 @@ body {
   margin-top: 4%;
 }
 
-@media screen and (max-width: 768px) {
-  .moonPage .moonSection .righttDestination .distanceTime {
-    text-align: center;
-    width: 100%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .moonPage .moonSection .righttDestination {
-    margin-top: 1rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .moonPage .moonSection {
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .moonPage {
-    background: url("../destination/background-destination-tablet.jpg") no-repeat center center/cover;
-  }
-}
-
 /**************************** CREW ****************************/
 .crewPage {
   height: 100vh;
@@ -375,12 +283,6 @@ body {
   bottom: 5rem;
 }
 
-@media screen and (max-width: 768px) {
-  .crewPage .crewSection .leftCrew .smallTitle {
-    margin-left: -90%;
-  }
-}
-
 .crewPage .crewSection .leftCrew h4.speciality {
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -388,12 +290,6 @@ body {
   color: #FFFFFF;
   opacity: 0.25;
   margin-top: 6rem;
-}
-
-@media screen and (max-width: 768px) {
-  .crewPage .crewSection .leftCrew h4.speciality {
-    margin-top: 3rem;
-  }
 }
 
 .crewPage .crewSection .leftCrew h3.fullName {
@@ -427,12 +323,6 @@ body {
   opacity: 1;
 }
 
-@media screen and (max-width: 768px) {
-  .crewPage .crewSection .leftCrew {
-    bottom: 1rem;
-  }
-}
-
 .crewPage .crewSection .rightCrew {
   position: relative;
 }
@@ -444,26 +334,6 @@ body {
 
 .crewPage .crewSection .rightCrew .crewImage img {
   max-width: calc(100% - 10rem);
-}
-
-@media screen and (max-width: 768px) {
-  .crewPage .crewSection .rightCrew .crewImage img {
-    max-width: 100%;
-    height: 50vh;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .crewPage .crewSection {
-    text-align: center;
-    right: auto;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .crewPage {
-    background: url("../crew/background-crew-tablet.jpg") no-repeat center center/cover;
-  }
 }
 
 /************************* TECHNOLOGY *************************/
@@ -534,6 +404,183 @@ body {
   background-color: #FFFFFF !important;
 }
 
+.techPage .techSection .leftTech .content .techContent .title {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.techPage .techSection .leftTech .content .techContent h3.fullName {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: 'Bellefair', serif;
+  color: #FFFFFF;
+  letter-spacing: 0.2rem;
+  margin: 0.7rem 0 1.5rem 0;
+}
+
+.techPage .techSection .rightTech .techImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.techPage .techSection .rightTech .techImage .landscape {
+  display: none;
+}
+
+.techPage .techSection .rightTech .techImage img {
+  max-width: calc(100% - 7rem);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/**************************** NAVBAR ****************************/
+@media screen and (max-width: 768px) {
+  .nav .navbar li a span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    padding-top: 0;
+  }
+  .nav .mobileNav {
+    display: block;
+  }
+  .nav .aesthetic-bar {
+    display: none;
+  }
+}
+
+/**************************** HOME ****************************/
+@media screen and (max-width: 768px) {
+  .homePage .heroSection .homeContent {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homePage .heroSection .homeContent .bigTitle {
+    font-size: 9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homePage .heroSection .cta {
+    margin-top: 12rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homePage .heroSection {
+    height: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homePage {
+    background: url("../home/background-home-tablet.jpg") no-repeat center center/cover;
+  }
+}
+
+/**************************** DESTINATION ****************************/
+@media screen and (max-width: 768px) {
+  .moonPage .moonSection .leftDestination .smallTitle {
+    margin-left: -90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .moonPage .moonSection .righttDestination .destinationMenu {
+    width: none;
+    margin: 0 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .moonPage .moonSection .righttDestination .distanceTime {
+    text-align: center;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .moonPage .moonSection .righttDestination {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .moonPage .moonSection {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .moonPage {
+    background: url("../destination/background-destination-tablet.jpg") no-repeat center center/cover;
+  }
+}
+
+/**************************** CREW ****************************/
+@media screen and (max-width: 768px) {
+  .crewPage .crewSection .leftCrew .smallTitle {
+    margin-left: -90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .crewPage .crewSection .leftCrew h4.speciality {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .crewPage .crewSection .leftCrew {
+    bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .crewPage .crewSection .rightCrew .crewImage img {
+    max-width: 100%;
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .crewPage .crewSection {
+    text-align: center;
+    right: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .crewPage {
+    background: url("../crew/background-crew-tablet.jpg") no-repeat center center/cover;
+  }
+}
+
+/************************* TECHNOLOGY *************************/
 @media screen and (max-width: 768px) {
   .techPage .techSection .leftTech .content .slider {
     display: -webkit-box;
@@ -546,24 +593,10 @@ body {
   }
 }
 
-.techPage .techSection .leftTech .content .techContent .title {
-  font-size: 1rem;
-  text-transform: uppercase;
-}
-
 @media screen and (max-width: 768px) {
   .techPage .techSection .leftTech .content .techContent .title {
     font-size: 1.5rem;
   }
-}
-
-.techPage .techSection .leftTech .content .techContent h3.fullName {
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  font-family: 'Bellefair', serif;
-  color: #FFFFFF;
-  letter-spacing: 0.2rem;
-  margin: 0.7rem 0 1.5rem 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -589,23 +622,6 @@ body {
     top: -15%;
     margin-left: -5%;
   }
-}
-
-.techPage .techSection .rightTech .techImage {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.techPage .techSection .rightTech .techImage .landscape {
-  display: none;
-}
-
-.techPage .techSection .rightTech .techImage img {
-  max-width: calc(100% - 7rem);
 }
 
 @media screen and (max-width: 768px) {

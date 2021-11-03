@@ -71,10 +71,6 @@ body {
     z-index: 22;
   }
 
-  .mobileNav {
-    display: none;
-  }
-
   .navbar {
     position: relative;
     display: flex;
@@ -83,7 +79,8 @@ body {
     list-style-type: none;
     z-index: 11;
 
-    .close {
+    .close,
+    .hamburger {
       display: none;
     }
 

@@ -1,36 +1,191 @@
-.homePage {
-  background: url(../home/background-home-mobile.jpg) no-repeat center center/cover;
+@media screen AND (max-width:375px) {
+  .active {
+    color: #FFFFFF !important;
+    border-bottom: none !important;
+    border-right: 5px solid #FFFFFF;
+  }
 
-  .nav {
-    padding: 1.25rem;
+  .homePage {
+    height: auto;
+    background: url(../home/background-home-mobile.jpg) no-repeat center center/cover;
 
-    .navbar {
-      display: none;
+    .nav {
+      padding: 1.25rem 1.25rem 0 1.25rem;
+      align-items: flex-start;
+
+      .navbar {
+        display: flex;
+        width: 70%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0;
+
+        &::before {
+          display: none;
+        }
+
+        .hamburger {
+          display: flex;
+          align-self: center;
+          width: 28px;
+          margin: 1.25rem;
+        }
+
+        .close {
+          display: none;
+          align-self: center;
+          width: 28px;
+          margin: 1.25rem;
+        }
+
+        a {
+          display: flex;
+          justify-content: end;
+        }
+
+        li {
+          display: none;
+          padding: 0.5rem 0 0 2.5rem;
+
+          a {
+            padding: 0;
+            padding-bottom: 1.5rem;
+            margin-top: 20px;
+            justify-content: start;
+
+            span {
+              display: block;
+              padding-right: 0.8rem;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+
+    .heroSection {
+      bottom: 3rem;
+
+      .homeContent {
+        width: 20rem;
+
+        .smallTitle {
+          font-size: 1rem;
+        }
+
+        .bigTitle {
+          font-size: 5rem;
+        }
+      }
+
+      .cta {
+        width: 10rem;
+        height: 10rem;
+        margin-top: 3rem;
+
+        .ctaButton {
+          font-size: 1.5rem;
+        }
+      }
     }
   }
 
-  .heroSection {
-    bottom: 3rem;
+  .mobileModel {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 30%;
+    right: 0;
+    background: rgba($color: #FFFFFF, $alpha: 0.05);
+    backdrop-filter: blur(10px);
+    width: 70%;
+  }
 
-    .homeContent {
-      width: 20rem;
+  /**************************** DESTINATION ****************************/
 
-      .smallTitle {
-        font-size: 1rem;
+  .moonPage {
+    height: 100vh;
+    background: url('../destination/background-destination-mobile.jpg') no-repeat center center/cover;
+    position: relative;
+
+    .moonSection {
+      display: flex;
+      justify-content: space-between;
+
+      .leftDestination {
+        position: relative;
+        bottom: 0;
+
+        .destinationImage {
+          width: 100%;
+          margin-top: 15%;
+
+          img {
+            max-width: calc(100% - 8rem);
+          }
+        }
       }
 
-      .bigTitle {
-        font-size: 5rem;
-      }
-    }
+      .righttDestination {
+        width: 30rem;
 
-    .cta {
-      width: 10rem;
-      height: 10rem;
-      margin-top: 3rem;
+        .destinationMenu {
+          display: flex;
+          justify-content: space-between;
+          width: 75%;
+          list-style-type: none;
 
-      .ctaButton {
-        font-size: 1.5rem;
+          li {
+            padding: 10px 0;
+
+            a {
+              text-decoration: none;
+              text-transform: uppercase;
+              color: #D0D6F9;
+              padding: 10px 0;
+              letter-spacing: 0.25rem;
+
+              &:hover {
+                border-bottom: 2px solid rgba($color: #FFFFFF, $alpha: 0.5);
+              }
+            }
+          }
+        }
+
+        .textContent {
+          margin-bottom: 8%;
+        }
+
+        .aesthetic-bar {
+          width: 100%;
+          border: 1px solid #979797;
+        }
+
+        .distanceTime {
+          display: flex;
+          justify-content: space-between;
+          width: 75%;
+          margin-top: 6%;
+
+          .distance,
+          .time {
+            .title {
+              font-size: 0.875rem;
+              text-transform: uppercase;
+              color: #D0D6F9;
+            }
+
+            .number {
+              font-size: 1.75rem;
+              font-family: 'Bellefair', serif;
+              text-transform: uppercase;
+              color: #FFFFFF;
+              margin-top: 4%;
+            }
+          }
+        }
       }
     }
   }
